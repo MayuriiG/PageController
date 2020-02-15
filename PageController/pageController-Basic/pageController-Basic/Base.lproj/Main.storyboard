@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pageController_Basic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POKEMON WORLD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYY-mB-pCP">
+                                <rect key="frame" x="74" y="131" width="267" height="41"/>
+                                <color key="backgroundColor" red="0.77916143091114065" green="0.86387268926056338" blue="0.75669024388359807" alpha="0.48999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="kme-VG-Epc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="267" id="xZw-4y-z2N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="23"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bnW-VQ-08w">
+                                <rect key="frame" x="14" y="210" width="387" height="346"/>
+                                <color key="backgroundColor" red="0.85848270940000004" green="0.80143048279999995" blue="0.68726603149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="387" id="5Vv-ho-M53"/>
+                                    <constraint firstAttribute="height" constant="346" id="U7f-nA-Mnc"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="WmL-PU-jLw"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="VZi-lS-L2T"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="8" translatesAutoresizingMaskIntoConstraints="NO" id="ChR-An-8N6">
+                                <rect key="frame" x="106" y="554" width="203" height="37"/>
+                                <color key="backgroundColor" red="0.23636803812288809" green="0.35094502616944911" blue="0.57873624225915488" alpha="0.4572324302575107" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="pageIndicatorTintColor" red="0.99167281389999995" green="0.88301569219999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nYY-mB-pCP" secondAttribute="trailing" constant="73" id="4SP-mv-AoB"/>
+                            <constraint firstItem="bnW-VQ-08w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="8ET-k1-Edq"/>
+                            <constraint firstItem="ChR-An-8N6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="Bn1-sH-97d"/>
+                            <constraint firstItem="nYY-mB-pCP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="GBB-zb-Z9J"/>
+                            <constraint firstItem="nYY-mB-pCP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="Zam-Y8-yJY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bnW-VQ-08w" secondAttribute="trailing" constant="13" id="ecI-Ym-EG3"/>
+                            <constraint firstItem="ChR-An-8N6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="f3s-xE-rFs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ChR-An-8N6" secondAttribute="bottom" constant="271" id="grC-hj-K6e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ChR-An-8N6" secondAttribute="trailing" constant="105" id="kzA-y9-63B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bnW-VQ-08w" secondAttribute="bottom" constant="306" id="nyp-kJ-5Wx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageContrler" destination="ChR-An-8N6" id="iPa-Us-WvR"/>
+                        <outlet property="scrolView" destination="bnW-VQ-08w" id="eWx-JE-H7z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+</document>
